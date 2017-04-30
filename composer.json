@@ -1,0 +1,26 @@
+{
+  "name": "mrkrstphr/auditable-object",
+  "description": "Provides a mechanism for creating auditable object properties with a proxy.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kristopher Wilson",
+      "email": "kristopherwilson@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "mrkrstphr\\AuditableObject\\": "src/"
+    }
+  },
+  "require-dev": {
+    "peridot-php/peridot": "^1.19",
+    "peridot-php/leo": "^1.6",
+    "friendsofphp/php-cs-fixer": "^2.3"
+  },
+  "scripts": {
+    "check-style": "vendor/bin/php-cs-fixer fix --dry-run --verbose --ansi",
+    "fix-style": "vendor/bin/php-cs-fixer fix",
+    "test": "vendor/bin/peridot --force-colors"
+  }
+}
